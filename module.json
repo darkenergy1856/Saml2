@@ -1,0 +1,334 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.example",
+    "module": "sp",
+    "version": "1.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "sp-1.0-SNAPSHOT.jar",
+          "url": "sp-1.0-SNAPSHOT.jar",
+          "size": 24258,
+          "sha512": "303d08d734522d5c3ff2a227d578678a66e0e188aa4359f7ceec29b808b730cb337cda55a1b0e50c7ac87546acbbf6e4dd9ca762123eb87c24bc2138759c066f",
+          "sha256": "394d0e06231c767032db2bf45c28716497c2474d8ece80c8e6343bc04f567785",
+          "sha1": "04dd3775e41c47f9e5f5904b4a8af3abce192ca9",
+          "md5": "13dfe430a088b718d9aa1ff960c4d9d3"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.security.extensions",
+          "module": "spring-security-saml2-core",
+          "version": {
+            "requires": "1.0.10.RELEASE"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "4.3.25.RELEASE"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-beans",
+          "version": {
+            "requires": "4.3.25.RELEASE"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-context",
+          "version": {
+            "requires": "4.3.25.RELEASE"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-aop",
+          "version": {
+            "requires": "4.3.25.RELEASE"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-web",
+          "version": {
+            "requires": "4.3.25.RELEASE"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-webmvc",
+          "version": {
+            "requires": "4.3.25.RELEASE"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.security",
+          "module": "spring-security-config",
+          "version": {
+            "requires": "4.2.13.RELEASE"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-log4j12",
+          "version": {
+            "requires": "1.7.29"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        },
+        {
+          "group": "org.slf4j",
+          "module": "jul-to-slf4j",
+          "version": {
+            "requires": "1.7.29"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        },
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.11.0"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        },
+        {
+          "group": "javax.servlet",
+          "module": "jstl",
+          "version": {
+            "requires": "1.2"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        },
+        {
+          "group": "se.jiderhamn.classloader-leak-prevention",
+          "module": "classloader-leak-prevention-servlet",
+          "version": {
+            "requires": "2.7.0"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        },
+        {
+          "group": "javax.servlet",
+          "module": "jsp-api",
+          "version": {
+            "requires": "2.0"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        },
+        {
+          "group": "javax.servlet",
+          "module": "javax.servlet-api",
+          "version": {
+            "requires": "3.1.0"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        },
+        {
+          "group": "javax.websocket",
+          "module": "javax.websocket-api",
+          "version": {
+            "requires": "1.0"
+          },
+          "excludes": [
+            {
+              "group": "*",
+              "module": "spring-boot-starter-tomcat"
+            },
+            {
+              "group": "*",
+              "module": "spring-boot-starter-jetty"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "sp-1.0-SNAPSHOT.jar",
+          "url": "sp-1.0-SNAPSHOT.jar",
+          "size": 24258,
+          "sha512": "303d08d734522d5c3ff2a227d578678a66e0e188aa4359f7ceec29b808b730cb337cda55a1b0e50c7ac87546acbbf6e4dd9ca762123eb87c24bc2138759c066f",
+          "sha256": "394d0e06231c767032db2bf45c28716497c2474d8ece80c8e6343bc04f567785",
+          "sha1": "04dd3775e41c47f9e5f5904b4a8af3abce192ca9",
+          "md5": "13dfe430a088b718d9aa1ff960c4d9d3"
+        }
+      ]
+    }
+  ]
+}
